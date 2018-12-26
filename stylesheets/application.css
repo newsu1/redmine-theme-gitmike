@@ -17,7 +17,7 @@ tt, code, pre { font-family: Consolas, "Liberation Mono", Courier, monospace; fo
 
 #header { background-color: #fafafa; border-bottom: 1px solid #eee; padding: 4px 8px 10px 6px; height: auto; }
 #header a { color: #4183C4; }
-#header > h1 { background: url(../images/logo.png) no-repeat 10px 5px; padding: 5px 45px; color: #393939; }
+#header > h1 { padding: 0px 10px; color: #393939; }
 
 @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { #header > h1 { background: url(../images/logo@2x.png) no-repeat 10px 5px; background-size: 30px 30px; } }
 #main { margin: 15px 15px 0 15px; background-color: white; }
@@ -53,6 +53,8 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
 
 #add-news, #add-message, #add-document { margin-bottom: 20px; }
 
+p.other-formats { text-align: right; display: none; }
+
 div#content h2.contacts_header { padding-bottom: 10px; /* white-space: nowrap;*/ }
 
 p.breadcrumb { margin: 4px 0 14px 0; }
@@ -84,7 +86,7 @@ div.contact.details, div.deal.details { padding: 15px !important; margin: -11px 
 
 #sidebar h3 { color: #222; }
 
-#footer { background-color: #F8F8F8; border: 0; border-top: 1px solid #E0E0E0; color: #636363; margin-top: 45px; padding: 15px; }
+#footer { display: none; background-color: #F8F8F8; border: 0; border-top: 1px solid #E0E0E0; color: #636363; margin-top: 45px; padding: 15px; }
 #footer .bgl .bgr:after { content: " and gitmike theme"; }
 
 h2, h3, h4 { border-bottom: 0; }
@@ -280,6 +282,7 @@ div.modal h3.title { background: transparent; color: inherit; }
 body.action-login #content, body.action-login #main.nosidebar #content { background: inherit; border: 0; box-shadow: none; }
 body.action-login #login-form table { padding: 3em; background: white; box-shadow: 0 0 3px #CCC; border: 1px solid #ddd; border-radius: 8px; }
 
+#login-form {margin:5em auto 2em auto; padding:20px; width:340px; border:1px solid #F6F6F6; background-color:#FFFFFF; border-radius:4px; box-sizing: border-box;}
 #login-form input#username, #login-form input#password { outline: none; margin: 0; border: 1px solid #ccc; padding: 6px; font-size: 140%; border-radius: 2px; }
 
 .controller-account.action-login div.flash, div.wiki div.flash { box-shadow: 0 0 3px #CCC; border: 1px solid #ddd !important; border-radius: 8px; margin: 5px; }
